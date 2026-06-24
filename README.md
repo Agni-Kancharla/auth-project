@@ -1,422 +1,69 @@
-# \# 🔐 Authentication System - Task 2
+# 🔐 Authentication System
 
-# 
+A responsive and secure Authentication System built using **HTML, CSS, Bootstrap, JavaScript, PHP, and MySQL**.
 
-# A responsive Login \& Registration System developed using HTML, CSS, Bootstrap, JavaScript, PHP, and MySQL.
+## Features
 
-# 
+* User Registration & Login
+* Password Hashing for Security
+* Prepared Statements (SQL Injection Protection)
+* Client-Side & Server-Side Validation
+* Password Match Validation
+* Show/Hide Password Toggle
+* Responsive Design with Bootstrap 5
+* Session-Based Authentication
+* Profile Management
 
-# \## 📌 Project Overview
+## Tech Stack
 
-# 
+**Frontend:** HTML5, CSS3, Bootstrap 5, JavaScript
 
-# This project demonstrates a complete user authentication system with:
+**Backend:** PHP
 
-# 
+**Database:** MySQL
 
-# \- User Registration
+**Tools:** XAMPP, phpMyAdmin, Git, GitHub
 
-# \- User Login
+## Installation
 
-# \- Password Validation
+1. Clone the repository
 
-# \- Password Hashing
+```bash
+git clone https://github.com/Agni-Kancharla/auth-project.git
+```
 
-# \- Responsive UI Design
+2. Move the project to:
 
-# \- PHP \& MySQL Backend
+```text
+xampp/htdocs/
+```
 
-# \- Secure Database Operations using Prepared Statements
+3. Start Apache and MySQL in XAMPP.
 
-# 
+4. Create a database named:
 
-# \---
+```sql
+auth_db
+```
 
-# 
+5. Import:
 
-# \## 🚀 Features
+```text
+database.sql
+```
 
-# 
+6. Run:
 
-# \### Frontend
+```text
+http://localhost/auth-project/index.html
+```
 
-# \- Responsive Login Page
+## Demo Video
 
-# \- Responsive Registration Page
+https://drive.google.com/file/d/1G4Q-za5D8pz-grefAUkW18SKR1gyKt5e/view?usp=sharing
 
-# \- Bootstrap 5 UI Components
+## Author
 
-# \- Mobile-First Design
+**Agni Kancharla**
 
-# \- Google Fonts
-
-# \- Smooth Animations
-
-# \- Show/Hide Password Toggle
-
-# \- Password Match Validation
-
-# 
-
-# \### Backend
-
-# \- User Registration
-
-# \- User Login Authentication
-
-# \- Password Hashing using PHP
-
-# \- MySQL Database Integration
-
-# \- Session Management
-
-# \- Prepared Statements to Prevent SQL Injection
-
-# 
-
-# \### Security
-
-# \- Server-Side Validation
-
-# \- Password Encryption (Hashing)
-
-# \- SQL Injection Protection
-
-# 
-
-# \---
-
-# 
-
-# \## 🛠️ Technologies Used
-
-# 
-
-# \### Frontend
-
-# \- HTML5
-
-# \- CSS3
-
-# \- Bootstrap 5
-
-# \- JavaScript
-
-# 
-
-# \### Backend
-
-# \- PHP
-
-# \- MySQL
-
-# 
-
-# \### Tools
-
-# \- XAMPP
-
-# \- phpMyAdmin
-
-# \- Git
-
-# \- GitHub
-
-# 
-
-# \---
-
-# 
-
-# \## 📂 Project Structure
-
-# 
-
-# ```text
-
-# auth-project/
-
-# │
-
-# ├── index.html
-
-# ├── reg-frontend.php
-
-# ├── style.css
-
-# ├── script.js
-
-# ├── database.sql
-
-# ├── README.md
-
-# │
-
-# ├── images/
-
-# │   ├── galaxy.jpg
-
-# │   └── profileicon.webp
-
-# │
-
-# ├── php/
-
-# │   ├── connect.php
-
-# │   ├── login.php
-
-# │   ├── logout.php
-
-# │   ├── reg-backend.php
-
-# │   ├── check\_user.php
-
-# │   ├── upload.php
-
-# │   ├── reset\_password.php
-
-# │   ├── update\_password.php
-
-# │   └── update\_profile.php
-
-# │
-
-# ├── dashboard.php
-
-# ├── profile.php
-
-# ├── edit\_profile.php
-
-# ├── forgot\_password.php
-
-# └── change\_password.php
-
-# ```
-
-# 
-
-# \---
-
-# 
-
-# \## ⚙️ Installation
-
-# 
-
-# \### Step 1
-
-# 
-
-# Clone the repository:
-
-# 
-
-# ```bash
-
-# git clone https://github.com/Agni-Kancharla/auth-project.git
-
-# ```
-
-# 
-
-# \### Step 2
-
-# 
-
-# Move the project folder into:
-
-# 
-
-# ```text
-
-# xampp/htdocs/
-
-# ```
-
-# 
-
-# \### Step 3
-
-# 
-
-# Start:
-
-# 
-
-# \- Apache
-
-# \- MySQL
-
-# 
-
-# from XAMPP Control Panel.
-
-# 
-
-# \### Step 4
-
-# 
-
-# Open phpMyAdmin:
-
-# 
-
-# ```text
-
-# http://localhost/phpmyadmin
-
-# ```
-
-# 
-
-# \### Step 5
-
-# 
-
-# Create a database:
-
-# 
-
-# ```sql
-
-# auth\_db
-
-# ```
-
-# 
-
-# \### Step 6
-
-# 
-
-# Import:
-
-# 
-
-# ```text
-
-# database.sql
-
-# ```
-
-# 
-
-# \### Step 7
-
-# 
-
-# Run the project:
-
-# 
-
-# ```text
-
-# http://localhost/auth-project/index.html
-
-# ```
-
-# 
-
-# \---
-
-# 
-
-# \## 🎥 Demo Video
-
-# 
-
-# Watch the project demonstration here:
-
-# 
-
-# 🔗 https://drive.google.com/file/d/1G4Q-za5D8pz-grefAUkW18SKR1gyKt5e/view?usp=sharing
-
-# 
-
-# \---
-
-# 
-
-# \## 📷 Key Functionalities Demonstrated
-
-# 
-
-# \- User Registration
-
-# \- Login Authentication
-
-# \- Password Matching Validation
-
-# \- Password Hashing
-
-# \- Database Storage
-
-# \- Responsive Design
-
-# \- Bootstrap Components
-
-# \- Secure PHP Backend
-
-# 
-
-# \---
-
-# 
-
-# \## 👨‍💻 Author
-
-# 
-
-# \*\*Agni Kancharla\*\*
-
-# 
-
-# GitHub:
-
-# https://github.com/Agni-Kancharla
-
-# 
-
-# \---
-
-# 
-
-# \## 📄 Task Submission
-
-# 
-
-# Task: Interactive UI \& Frontend Development
-
-# 
-
-# Deliverables Completed:
-
-# 
-
-# \- Responsive Login UI ✅
-
-# \- Responsive Registration UI ✅
-
-# \- Bootstrap 5 Components ✅
-
-# \- Form Validation ✅
-
-# \- Password Toggle ✅
-
-# \- Password Match Check ✅
-
-# \- PHP Backend Integration ✅
-
-# \- MySQL Database Integration ✅
-
-# \- Prepared Statements ✅
-
-# \- Password Hashing ✅
-
-# \- GitHub Repository ✅
-
-# \- Demo Video ✅
-
-
-
+GitHub: https://github.com/Agni-Kancharla
